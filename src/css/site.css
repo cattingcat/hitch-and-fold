@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+@import "./normalize.css";
+@import "./defs.css";
+
+.logo {
+    background-image: url(https://d13yacurqjgara.cloudfront.net/users/17797/screenshots/2156064/brainstation_logo_1x.png);
+    height: 90px;
+    width: 200px;
+    background-position: center;
+    background-size: 100%;
+}
+
+.header {
+    color: rgb(249, 249, 250);;
+    background: rgb(46, 59, 79);
+
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__page-title {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__navigation {
+        display: inline-block;
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.page-header {
+    margin: 0;
+    display: block;
+
+    &--large-slash {
+        display: inline-block;
+        svg {
+            height: 40px;
+        }
+    }
+
+    &--title {
+        vertical-align: super;
+    }
+}
