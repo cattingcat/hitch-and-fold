@@ -1,22 +1,24 @@
 * { box-sizing: border-box; }
 @import "./normalize.css";
 @import "./defs.css";
+@import "./components/top-bar.css";
+@import "./components/content.css";
 
 .logo {
     background-image: url(https://d13yacurqjgara.cloudfront.net/users/17797/screenshots/2156064/brainstation_logo_1x.png);
-    height: 90px;
-    width: 200px;
     background-position: center;
     background-size: 100%;
 }
 
 .header {
-    color: rgb(249, 249, 250);;
-    background: rgb(46, 59, 79);
+    color: $white-text-color;
+    background: $main-color;
 
     &__logo {
         display: inline-block;
         vertical-align: middle;
+        height: 75px;
+        width: 130px;
     }
 
     &__page-title {
@@ -24,11 +26,34 @@
         vertical-align: middle;
     }
 
-    &__navigation {
+    &__nav {
         display: inline-block;
-        li {
-            display: inline-block;
-        }
+    }
+}
+
+.nav {
+    &__link {
+        color: $white-text-color;
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0 auto;
+    }
+    &__item {
+        font-family: $nav-font;
+        display: inline-block;
+        letter-spacing: 2px;
+        font-size: 25px;
+        padding: 0 5px;
+        transition: all ease-in-out 200ms;
+    }
+    &__item:hover {
+        font-size: 30px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    &__item--active {
+        border-bottom: solid $white-text-color 1px;
     }
 }
 
@@ -36,14 +61,80 @@
     margin: 0;
     display: block;
 
-    &--large-slash {
+    &__large-slash {
         display: inline-block;
         svg {
             height: 40px;
         }
     }
 
-    &--title {
+    &__title {
+        font-family: "BebasNeue-Light";
         vertical-align: super;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 865px){
+    .nav {
+        &__item {
+            font-size: 23px;
+        }
+        &__item:hover {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .header {
+        &__logo {
+            height: 35px;
+            width: 90px;
+        }
+    }
+    .nav {
+        &__item:hover {
+            font-size: 20px;
+        }
+    }
+    .page-header {
+        &--large-slash {
+            svg {
+                height: 30px;
+            }
+        }
+
+        &--title {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 730px){
+    .header {
+        padding-bottom: 5px;
+
+        &__logo {
+            height: 35px;
+            width: 90px;
+        }
+
+        &__page-title {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header__logo {
+        margin: 0 auto;
+        width: 600px;
+        height: 220px;
+        display: block;
+    }
+
+    .nav {
+        display: block;
     }
 }

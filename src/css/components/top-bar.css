@@ -1,0 +1,4 @@
+.topbar {
+    padding: 3px 0;
+    border-bottom: solid $main-color 1px;
+}

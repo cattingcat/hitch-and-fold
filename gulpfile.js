@@ -4,8 +4,9 @@ var gulp = require('gulp'),
 	babel = require('gulp-babel');
 
 var postcssPlugins = [
+	require('postcss-import'),
 	require('postcss-nested'),
-	require('postcss-import')
+	require('postcss-simple-vars')
 ];
 
 gulp.task('css', function(){

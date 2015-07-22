@@ -1,4 +1,92 @@
 @font-face {
-    font-family: "";
-    src: url("");
+    font-family: "BebasNeue-Thin";
+    src: url("/fonts/bebas/BebasNeue Thin.otf");
+}
+
+@font-face {
+    font-family: "BebasNeue-Light";
+    src: url("/fonts/bebas/BebasNeue Light.otf");
+}
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("/fonts/bebas/BebasNeue Regular.otf");
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("/fonts/raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Thin";
+    src: url("/fonts/raleway/Raleway-Thin.ttf");
+}
+
+$main-color: rgb(46, 59, 79);
+
+$white-text-color: rgb(249, 249, 250);
+$black-text-color: #0D0D0D;
+$gray-text-color: rgb(88, 88, 89);
+
+$nav-font:      "BebasNeue-Thin";
+$main-font:     "Raleway-Regular";
+$heading-font:  "Raleway-Thin";
+
+html {
+    background: #e2e2e2;
+}
+body {
+    background: $white-text-color;
+    font-family: $main-font;
+    font-size: 16px;
+    color: $black-text-color;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $heading-font;
+}
+
+.block {
+    color: rgb(236, 237, 238);
+    text-decoration: none;
+    display: block;
+}
+
+.btn {
+    border: solid $main-color 1px;
+    margin: 10px;
+    outline: none;
+    padding: 3px 13px;
+    color: white;
+    background-color: $main-color;
+    transition: all ease-in-out 200ms;
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &__icon {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        vertical-align: middle;
+        font-size: 30px; /* for icon-font */
+    }
+
+    &--small {
+        .btn__icon {
+
+        }
+    }
+
+    &--large {
+        .btn__icon {
+
+        }
+    }
+
+    &--rounded {
+        border-radius: 100px;
+    }
 }

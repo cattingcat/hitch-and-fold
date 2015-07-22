@@ -3,43 +3,144 @@
     <head>
         <meta charset="utf-8">
         <title> Hitch and Fold </title>
+        <meta content='width=device-width' name='viewport'/>
+        <link rel="stylesheet" href="/fonts/icomoon/icomoon.css" charset="utf-8">
         <link rel="stylesheet" href="/css/normalize.css" charset="utf-8">
         <link rel="stylesheet" href="/css/site.css" charset="utf-8">
     </head>
     <body>
         <header class="header">
-            <div class="logo header__logo"> </div>
+            <a class="block header__logo logo" href="#"> </a>
             <div class="header__page-title">
-
                 <h2 class="page-header">
-                    <div class="page-header--large-slash">
+                    <div class="page-header__large-slash">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 12.9 44.5">
                             <path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M11 0l1.9.5-11 44-1.9-.5 11-44z">
                             </path>
                         </svg>
                     </div>
-                    <span class="page-header--title"> Magic </span>
+                    <span class="page-header__title"> Magic </span>
                 </h2>
             </div>
-            <nav class="header__navigation">
+            <nav class="header__nav nav">
                 <ul>
-                    <li> About </li>
-                    <li> Poker </li>
-                    <li> Travel </li>
-                    <li> Heartstone </li>
-                    <li> Magic </li>
-                    <li> Contact us </li>
+                    <li class="nav__item nav__item--active"> <a class="nav__link" href="#about"> About </a> </li>
+                    <li class="nav__item"> <a class="nav__link" href="#about"> Poker </a> </li>
+                    <li class="nav__item"> <a class="nav__link" href="#about"> Travel </a> </li>
+                    <li class="nav__item"> <a class="nav__link" href="#about"> Heartstone </a> </li>
+                    <li class="nav__item"> <a class="nav__link" href="#about"> Magic </a> </li>
+                    <li class="nav__item"> <a class="nav__link" href="#about"> Contact us </a> </li>
                 </ul>
             </nav>
         </header>
         <main class="main">
+            <div class="topbar">
+                <button class="topbar__button btn">
+                    <img src="/fonts/entypo+/add-user.svg" class="btn__icon" />
+                    Invite
+                </button>
+
+                <button class="topbar__button btn">
+                    <span class="icon icon-home btn__icon"></span>
+                    <span class="btn__text"> Home </span>
+                </button>
+
+                <button class="topbar__button btn btn--rounded">
+                    <span class="icon icon-home btn__icon"></span>
+                    <span class="btn__text"> Another one button </span>
+                </button>
+            </div>
             <div class="top">
-                top
+                <!-- TODO: some welcome message -->
             </div>
 
             <div class="content">
                 <div class="content__main">
-                    main content
+
+                    <article class="article-preview">
+                        <div class="article-preview__author article-author">
+                            <div class="article-author__avatar">
+                                <img src="https://randomuser.me/api/portraits/med/women/71.jpg" alt="" />
+                            </div>
+                            <div class="article-author__summary">
+                                <div class="article-author__name">
+                                    Sheila Ellis
+                                </div>
+                                <div class="article-author__date">
+                                    2 weeks ago
+                                </div>
+                            </div>
+                        </div>
+                        <img class="article-preview__image" src="https://d262ilb51hltx0.cloudfront.net/fit/t/1000/300/1*OhIhVAgh9FhZjKpdKk0UeQ.jpeg" alt="" />
+                        <h3 class="article-preview__name"> Best article ever </h3>
+                        <div class="article-preview__short">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="article-preview__continue">
+                            <a href="#"> Continue reading... </a>
+                            <span class="article-preview__continue__time">
+                                <span class="icon icon-stopwatch"> </span>
+                                <span> 10 min reading </span>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="article-preview">
+                        <div class="article-preview__author article-author">
+                            <div class="article-author__avatar">
+                                <img src="https://randomuser.me/api/portraits/med/women/73.jpg" alt="" />
+                            </div>
+                            <div class="article-author__summary">
+                                <div class="article-author__name">
+                                    Sheila Ellis
+                                </div>
+                                <div class="article-author__date">
+                                    2 weeks ago
+                                </div>
+                            </div>
+                        </div>
+                        <img class="article-preview__image" src="https://d262ilb51hltx0.cloudfront.net/fit/t/1000/300/1*TV6vEgojNX8QFufqzwozeA.jpeg" alt="" />
+                        <h3 class="article-preview__name"> Best article ever </h3>
+                        <div class="article-preview__short">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="article-preview__continue">
+                            <a href="#"> Continue reading... </a>
+                            <span class="article-preview__continue__time">
+                                <span class="icon icon-stopwatch"> </span>
+                                <span> 10 min reading </span>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="article-preview">
+                        <div class="article-preview__author article-author">
+                            <div class="article-author__avatar">
+                                <img src="https://randomuser.me/api/portraits/med/women/72.jpg" alt="" />
+                            </div>
+                            <div class="article-author__summary">
+                                <div class="article-author__name">
+                                    Sheila Ellis
+                                </div>
+                                <div class="article-author__date">
+                                    2 weeks ago
+                                </div>
+                            </div>
+                        </div>
+                        <img class="article-preview__image" src="https://d262ilb51hltx0.cloudfront.net/fit/t/1000/300/1*cHrXjIht9o3YF2iqIDSLIg.png" alt="" />
+                        <h3 class="article-preview__name"> Best article ever </h3>
+                        <div class="article-preview__short">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="article-preview__continue">
+                            <a href="#"> Continue reading... </a>
+                            <span class="article-preview__continue__time">
+                                <span class="icon icon-stopwatch"> </span>
+                                <span> 10 min reading </span>
+                            </span>
+                        </div>
+                    </article>
+
                 </div>
                 <div class="content__aside">
                     content aside
