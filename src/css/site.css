@@ -32,6 +32,8 @@
 }
 
 .nav {
+    padding-left: 30px;
+
     &__link {
         color: $white-text-color;
         text-decoration: none;
@@ -39,6 +41,8 @@
 
     ul {
         margin: 0 auto;
+        padding: 0;
+        text-align: center;
     }
     &__item {
         font-family: $nav-font;
@@ -76,6 +80,11 @@
 }
 
 @media (max-width: 865px){
+    .header {
+        &__logo {
+            height: 65px;
+        }
+    }
     .nav {
         &__item {
             font-size: 23px;
@@ -112,9 +121,10 @@
 }
 
 @media (max-width: 730px){
-    .header {
+    .nav {
         padding-bottom: 5px;
-
+    }
+    .header {
         &__logo {
             height: 35px;
             width: 90px;

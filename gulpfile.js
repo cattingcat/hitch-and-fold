@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	postcss = require('gulp-postcss'),
+	htmlInclude = require('gulp-file-include'),
 	babel = require('gulp-babel');
 
 var postcssPlugins = [
@@ -17,6 +18,10 @@ gulp.task('css', function(){
 
 gulp.task('html', function(){
 	gulp.src('./src/*.html')
+		.pipe(htmlInclude({
+			prefix: '@@',
+			basepath: '@file'
+		}))
 		.pipe(gulp.dest('./build/'));
 });
 
@@ -45,7 +50,7 @@ gulp.task('watch', function(){
 		gulp.start('js:babel');
 	});
 
-	watch(['./src/*.html'], function(event, cb) {
+	watch(['./src/*.html', './src/tmpl_html/*.html'], function(event, cb) {
 		gulp.start('html');
 	});
 });

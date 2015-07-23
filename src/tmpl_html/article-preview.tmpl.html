@@ -1,0 +1,41 @@
+<script type="text/html-template" id="article-preview">
+
+<!-- <article class="article-preview"> -->
+    <div class="article-preview__author article-author">
+        <div class="article-author__avatar">
+            <img src="<%= photo %>" alt="" />
+        </div>
+        <div class="article-author__summary">
+            <div class="article-author__name">
+                <%= fullName %>
+            </div>
+            <div class="article-author__date">
+                <%= ageStr %>
+            </div>
+        </div>
+    </div>
+    <img class="article-preview__image" src="<%= img %>" alt="" />
+    <h3 class="article-preview__name">
+        <a class="article-preview__link" href="#/article/<%= id %>">
+             <%= title %>
+        </a>
+    </h3>
+    <div class="article-preview__short">
+        <p>
+            <%= text %>
+        </p>
+    </div>
+    <div class="article-preview__continue">
+        <a class="article-preview__continue-link" href="#/article/<%= id %>">
+            Continue reading...
+        </a>
+        <span class="article-preview__continue__time">
+            <span class="icon icon-stopwatch"> </span>
+            <span>
+                <%= lengthStr %>
+            </span>
+        </span>
+    </div>
+<!-- </article> -->
+
+</script>

@@ -6,6 +6,7 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-babel": "^5.1.0",
+    "gulp-file-include": "^0.13.5",
     "gulp-postcss": "^5.1.9",
     "gulp-watch": "^4.3.3",
     "postcss-import": "^6.2.0",

@@ -1,22 +1,32 @@
 .content {
     display: flex;
     flex-flow: row nowrap;
-    padding: 0 10px;
+    padding: 0 20px;
 
     &__main {
         width: 70%;
         padding: 0 10px;
+
     }
     &__aside {
         background: #FAFAFA;
         width: 30%;
+    }
+
+    &--no-aside {
+        &__main {
+            width: 100%;
+        }
+        &__aside {
+            display: none;
+        }
     }
 }
 
 .article-preview {
     border-bottom: solid rgba(0, 0, 0, 0.09) 1px;
     transition: all ease-in-out 200ms;
-    padding: 23px 0;
+    padding: 15px 0 21px 0;
     font-size: 18px;
     &:hover {
         border-color: rgba(0, 0, 0, 0.3);
@@ -25,6 +35,16 @@
     &__name {
         font-size: 28px;
         margin: 15px 0 10px 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $black-text-color;
+        transition: border ease-in-out 200ms;
+        border-bottom: solid transparent 1px;
+        &:hover {
+            border-bottom: solid gray 1px;
+        }
     }
 
     &__image {
@@ -37,13 +57,21 @@
     }
 
     &__continue {
-        margin-top: 10px;
+        margin-top: 15px;
 
         &__time {
-            margin-left: 5px;
+            margin-left: 15px;
             color: $gray-text-color;
             font-size: 13px;
         }
+    }
+
+    &__continue-link {
+        border-radius: 100px;
+        border: solid $main-color 1px;
+        padding: 7px 15px;
+        text-decoration: none;
+        color: $black-text-color;
     }
 }
 
@@ -61,6 +89,7 @@
 
     &__summary {
         display: inline-block;
+        padding-top: 4px;
     }
 
     &__date {
