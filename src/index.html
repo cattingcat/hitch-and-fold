@@ -15,6 +15,7 @@
 
         @@include('./tmpl_html/content-page-layout.tmpl.html')
         @@include('./tmpl_html/article-preview.tmpl.html')
+        @@include('./tmpl_html/options-view.tmpl.html')
     </head>
     <body>
         <header class="header">
@@ -23,18 +24,17 @@
                 <h2 class="page-header">
                     <div class="page-header__large-slash">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 12.9 44.5">
-                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M11 0l1.9.5-11 44-1.9-.5 11-44z">
-                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M11 0l1.9.5-11 44-1.9-.5 11-44z"></path>
                         </svg>
                     </div>
-                    <span class="page-header__title"> Magic </span>
+                    <span class="page-header__title"> H&F </span>
                 </h2>
             </div>
             <nav class="header__nav nav">
                 <ul>
                     <li class="nav__item nav__item--active"> <a class="nav__link" href="#about"> About </a> </li>
-                    <li class="nav__item"> <a class="nav__link" href="#Poker"> Poker </a> </li>
-                    <li class="nav__item"> <a class="nav__link" href="#Travel"> Travel </a> </li>
+                    <li class="nav__item"> <a class="nav__link" href="#articles"> Articles </a> </li>
+                    <li class="nav__item"> <a class="nav__link" href="#options"> Options </a> </li>
                     <li class="nav__item"> <a class="nav__link" href="#Heartstone"> Heartstone </a> </li>
                     <li class="nav__item"> <a class="nav__link" href="#Magic"> Magic </a> </li>
                     <li class="nav__item"> <a class="nav__link" href="#ContactUs"> Contact us </a> </li>
@@ -53,7 +53,9 @@
         <script src="/js/data-stub.js" charset="utf-8"></script>
         <script src="/js/script.js" charset="utf-8"></script>
         <script src="/js/models.js" charset="utf-8"></script>
+        <script src="/js/data-app.js" charset="utf-8"></script>
         <script src="/js/views.js" charset="utf-8"></script>
+        <script src="/js/apps.js" charset="utf-8"></script>
 
         <script type="text/javascript">
             App.start();
